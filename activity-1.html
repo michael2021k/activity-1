@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<body style="background-color:#059e33;">
+</body>
+
+<center><h1 style="color:rgb(3, 1, 10); font-family:Copperplate;"> ACTIVITY 1 </h1></center>
+
+
+<div ng-app="">
+
+<center><p>Enter your Name: <input type="text" ng-model="name"></p>
+<p>You wrote: {{ name }}</p></center>
+
+<center><p>Enter your Address: <input type="text" ng-model="add"></p>
+<p>You wrote: {{ add }}</p></center>
+
+<center><p>Enter your School: <input type="text" ng-model="shs"></p>
+<p>You wrote: {{ shs }}</p></center>
+
+<center><p>Enter your Course: <input type="text" ng-model="course"></p>
+<p>You wrote: {{ course }}</p></center>
+
+<center><div ng-app="" ng-init="names=[
+{name:'Michaela',city:'Q.C' , description: 'Fat Girl.'},
+{name:'Keven',city:'Manila' , description: 'Fat Boy.'},
+{name:'Joshua',city:'Manila' , description: 'Idiot.'},
+{name:'John Paul',city:'Manila' , description: 'Funny.'},
+{name:'Frixel',city:'Manila' , description: 'Dark boy.'},
+{name:'Mayc',city:'Manila' , description: 'Serious Girl.'},
+{name:'Jemuel',city:'Pandacan Manila' , description: 'Heartrob.'},
+{name:'Lemmuel',city:'Q.C' , description: 'Always on the go.'},
+{name:'Norman',city:'Q.C' , description: 'Coworker.'},
+{name:'Redfield',city:'Cavite' , description: 'Arrogant haha.'}]">
+
+<h2><p style="font-family:courier;">They are my good friends:</p></h2></div></center>
+<center>
+  <li ng-repeat="x in names">
+  {{ 'Name: ' + x.name + ', ' + 'City: ' + x.city + ', ' + 'Description: ' + x.description }}</li>
+</center>
+
+</div>
+
+</body>
+</html>
